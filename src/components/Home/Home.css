@@ -1,0 +1,21 @@
+.headerBg {
+    background-color: bisque;
+    min-height: 30rem;
+}
+
+.banner {
+
+}
+
+.banner__heading {
+    color: #111430;
+}
+
+.banner__Img {
+    width: 90%
+}
+
+.mainBody {
+    min-height: 100vh;
+    margin-top: 50px;
+}

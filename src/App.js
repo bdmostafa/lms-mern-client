@@ -13,24 +13,24 @@ import Login from './components/Login/Login';
 import NoMatch from './components/NoMatch/NoMatch';
 import { createContext, useState } from 'react';
 
-// export const UserContext = createContext();
+export const UserContext = createContext();
 
 function App() {
-  // const [loggedInUser, setLoggedInUser] = useState({});
-  // const [admin, setAdmin] = useState(false);
-  // const [order, setOrder] = useState({});
-  // const [user, setUser] = useState(true);
+  const [loggedInUser, setLoggedInUser] = useState(true);
+  const [librarian, setLibrarian] = useState(false);
+  const [order, setOrder] = useState({});
+  const [student, setStudent] = useState(true);
 
   return (
     <UserContext.Provider value={{
-      // loggedInUser,
-      // setLoggedInUser,
-      // order,
-      // setOrder,
-      // admin,
-      // setAdmin,
-      // user,
-      // setUser
+      loggedInUser,
+      setLoggedInUser,
+      order,
+      setOrder,
+      librarian,
+      setLibrarian,
+      student,
+      setStudent
     }}>
       <Router>
         <Switch>
